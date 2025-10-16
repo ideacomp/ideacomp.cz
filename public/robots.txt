@@ -1,0 +1,74 @@
+# Robots.txt for Ideacomp - Custom Software Development
+# https://ideacomp.cz
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ideacomp.cz/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin, API, and internal pages
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /404
+Disallow: /500
+
+# Disallow query parameters and tracking URLs
+Disallow: /*?*utm_*
+Disallow: /*?*ref=*
+Disallow: /*?*fbclid=*
+Disallow: /*?*gclid=*
+
+# Disallow static assets that shouldn't be indexed as pages
+Disallow: /*.ico$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.gif$
+Disallow: /*.svg$
+Disallow: /*.webp$
+Disallow: /*.avif$
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.mp4$
+
+# Allow important pages explicitly
+Allow: /
+Allow: /solutions
+Allow: /contact
+
+# Allow important images for social sharing
+Allow: /landscape_logo.png
+Allow: /logo.png
+Allow: /favicon.ico
+
+# Special rules for different bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+Allow: /landscape_logo.png
+Allow: /logo.png
+
+User-agent: Twitterbot
+Allow: /
+Allow: /landscape_logo.png
+Allow: /logo.png
+
+User-agent: LinkedInBot
+Allow: /
+Allow: /landscape_logo.png
+Allow: /logo.png
