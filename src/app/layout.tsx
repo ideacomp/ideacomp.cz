@@ -148,6 +148,12 @@ export default function RootLayout({
 				<meta name="theme-color" content="#0891b2" />
 				<meta name="msapplication-TileColor" content="#0891b2" />
 				<meta name="color-scheme" content="dark light" />
+				  <Script
+			          data-site-id="1k5cqZeUhBPsYOzs"
+			          data-domain="ideacomp.cz"
+			          src="https://cdn.engagetrack.net/sdk.js"
+			          strategy="afterInteractive"
+			        />
 			</head>
 			<body>
 				<GoogleAnalytics/>
